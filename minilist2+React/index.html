@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini List Extension</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Mini List</h1>
+
+      <div class="input-group">
+        <input type="text" id="todoInput" placeholder="리스트를 입력하세요" />
+        <select id="priorityInput">
+          <option value="HIGH">HIGH</option>
+          <option value="MEDIUM">MEDIUM</option>
+          <option value="LOW">LOW</option>
+        </select>
+        <button id="addBtn">추가</button>
+      </div>
+
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">전체 보기</button>
+        <button class="filter-btn" data-filter="completed">완료 항목</button>
+        <button class="filter-btn" data-filter="active">미완료 항목</button>
+      </div>
+
+      <div><ul id="todoList"></ul></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
