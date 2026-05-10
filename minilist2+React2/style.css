@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  width: 380px;
+  background: white;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 2;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  outline: none;
+}
+
+select {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+button#addBtn {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.filter-btn {
+  flex: 1;
+  padding: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  color: #666;
+}
+
+.filter-btn.active {
+  background: #333;
+  color: white;
+}
+
+/* 리스트 아이템 스타일 */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li:hover {
+  background-color: #fafafa;
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.priority-label {
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.priority-HIGH {
+  color: #d84545;
+}
+.priority-MEDIUM {
+  color: #ffc648;
+}
+.priority-LOW {
+  color: #bee069;
+}
+
+.todo-text {
+  font-size: 15px;
+  color: #2d3436;
+}
+
+.check-icon {
+  color: #2ecc71;
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.todo-date {
+  font-size: 12px;
+  color: #b2bec3;
+}
+
+/* 완료(done) 상태 스타일 */
+.done .todo-text {
+  text-decoration: line-through;
+  color: #b2bec3;
+}
+
+.done .priority-label {
+  color: #dfe6e9 !important;
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  background-color: #ff7675;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 11px;
+}
